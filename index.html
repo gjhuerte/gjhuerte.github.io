@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Gabriel Jay Huerte</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+		.navbar,.panel{
+			border:none;
+			border-radius: 0px;
+		}
+
+		.navbar-nav > li > a{
+			color: white;
+		}
+
+		.navbar > .container-fluid .navbar-brand {
+			color: white;
+		}
+
+		.panel-shadow,#nav-logo{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.nav-pills{
+			-webkit-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+
+		.navbar{
+/*			border-radius: 10px;
+			margin: 10px;*/
+		}
+
+		.navbar-default{
+			-webkit-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+
+		.nav > li > a:focus, .nav > li > a:hover {
+			background-color: rgba(255,255,255,0.90);
+			color: black;
+		}
+
+		html,body{height:100%;}
+		.carousel,.item,.active{height:100%;}
+		.carousel-inner{height:100%;}
+
+		.footer{
+			background: #0e2e2d;
+			color: white;
+			padding: 50px;
+		}
+
+		.indention{
+			margin-left: 50px;
+		}
+
+		.hidden{
+			display: none;
+		}
+
+
+    </style>
+  </head>
+  <body data-spy="scroll" target="#navbar">
+    <nav class="navbar nav-pills navbar-fixed-top" id="navbar">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="hamburger-button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo/logo-plain-64.png" class="img img-circle hidden" id="nav-logo"></a>
+          <a class="navbar-brand" href="#">Gabriel Jay Huerte</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img src="img/background/background.jpg" alt="looking for a programmer" style="zoom: 2;display: block;margin: auto;height: 100%;max-height: 100%;">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="img/background/background-2.jpg" alt="looking for a programmer" style="height: 100%;">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="img/background/background-3.jpg" alt="looking for a programmer" style="height: 100%;">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	    ...
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+    <div class="container" id="about">
+		<div class="row">
+			<div class="col-md-12" style="margin-top: 7%;">
+	          <blockquote>
+	            <p class="text-justify" style="letter-spacing: 1.5px;"><i>The best programmers are not marginally better than merely good ones. They are an order-of-magnitude better, measured by whatever standard: conceptual creativity, speed, ingenuity of design, or problem-solving ability.</i></p>
+	            <footer><cite title="Randall E. Stross">Randall E. Stross</cite></footer>
+	          </blockquote>
+	        </div>
+		</div>
+    	<div class="row">
+	      <div class="col-md-12" style="margin-top: 5%;padding-bottom: 10%;">
+	        <div class="col-md-4">
+	          <img class="img img-responsive img-circle center-block" alt="profile" src="img/profile/profile-256.jpg">
+	          <h2 class="text-center" style="color: #454545;"> Huerte, Gabriel Jay B </h2>
+	          <h3 class="text-success text-center"> Freelancer </h3>
+	        </div>
+	        <div class="col-md-8" style="background: #00a886;color: white;padding: 5%;border-radius: 2%;">
+	          <p class="text-justify" style="letter-spacing: 1.5px">
+	          	<span class="indention"></span>Good Day to you! Im here to deliver an <strong>affordable</strong> and <strong>user-friendly</strong> systems using open-source languages. Whether it be web application, mobile ( android ) , and Desktop applications. Delivering you a trusted software at the lowest cost  is my job. <br /><br/ > 
+	          	<span class="indention"></span>Maintenance and custom features can be negotiable. You can choose a variety of pre-compiled features on your system. One week of free check up will be done to ensure the quality of system. By the end of the first month, there will be a maintenance check up to ensure the system is running according to your satisfaction. <br /><br/ >
+	          	<span class="indention"></span>Below are some of my projects delivered to customers around the world.  
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="projects">
+    	<div class="row" style="margin-top: 7%;margin-bottom:5%;">
+    		<div class="col-md-12">
+				<h1 class="text-center text-muted">No Available Projects Yet</h1>
+			</div>
+			<div class="col-md-12">
+				<img class="img img-responsive img-circle center-block" src="img/frown-face.png">
+			</div>
+		</div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="tools" style="margin-top: 5%;">
+    	<h3 style="margin-top: 7%;">Here are some tools created for your convenience</h3>
+    	<div class="row">
+    		<div class="col-md-12" style="margin-top: 5%;">
+				<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="..." alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading">Eclipse Opener</h4>
+				    A tool that helps organize your eclipse product. By setting all the location of your eclipse product, you can now have a shortcut on your eclipse. This tool eases your work due to its feature " One-click to go ".
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-md-12" style="margin-top: 5%;">
+				<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="..." alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading">Home and Connect ( alpha )</h4>
+				    A revolutionary and state of the art rental system made for you. This can help ease your problems in checking all the rental information you have.
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-md-12" style="margin-top: 5%;margin-bottom: 5%;">
+				<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="..." alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading">Student-Teachers-Quiz-Simulation ( alpha )</h4>
+				    Having problem in manual creation of test paper? Dont worry! Were here to back you up. Presenting a Quiz Simulation to help you check and create a quiz according to your needs.
+				  </div>
+				</div>
+    		</div>
+    	</div>
+    </div>
+
+
+    <div class="container" id="contact" style="margin-bottom: 5%">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<legend style="margin-top: 7%;"><h3 class="text-success">Feedback and Suggestion?</h3></legend>
+    		</div>
+    		<div class="col-md-12">
+	    		<div class="col-md-12">
+	    			<p> You can send us your feedback and suggestion at gjhuerte@gmail.com</p>
+	    		</div>
+    		</div>
+    		<div class="col-md-6">
+	    		<div class="clearfix form-group">
+	    			<div class="col-md-12">	
+	    				<input type="text" class="form-control"  placeholder="Title">
+	    			</div>
+	    		</div>
+	    		<div class="clearfix form-group">
+	    			<div class="col-md-12">
+	    				<textarea class="form-control" placeholder="Enter details here" rows="8"></textarea>
+	    			</div>
+	    		</div>
+	    		<div class="form-group">
+	    			<div class="col-md-12">
+	    				<button class="btn btn-primary btn-block">Submit</button>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="col-md-6">
+	    	</div>
+    	</div>
+    </div>
+
+    <footer class="footer container-fluid" style="letter-spacing: 1.5px;">
+    	<div class="row container" style="padding-left: 15%;">
+    		<div class="col-sm-4 text-left">
+    			<h3>About</h3>
+    			<ul class="list-unstyled">
+    				<li>History</li>
+    				<li>Mission | Vision</li>
+    				<li>Rules and Regulations</li>
+    				<li>Contract Information</li>
+    			</ul>
+    		</div>
+    		<div class="col-sm-4 text-justify">
+    			<h3>Credits</h3>
+    			<ul class="list-unstyled">
+    				<li>CSS Framework: getbootsrap.com</li>
+    				<li>Icon Source: flaticons.com</li>
+    				<li>Pexels.com</li>
+    			</ul>
+    		</div>
+    		<div class="col-sm-4 text-left">
+    			<h3>Contact Us</h3>
+    			<ul class="list-unstyled">
+    				<li>facebook.com/gjhuerte</li>
+    				<li>gjhuerte@gmail.com</li>
+    				<li>09429481398</li>
+    			</ul>
+    		</div>
+    	</div>
+    </footer>
+    <div class="container-fluid" style="background: #060f0f; color: white;">
+    	<h3 class="text-center">All rights reserved &copy; 2017</h3>
+    	<h5 class="text-center">All image used in this site are not owned by me.</h5>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 85) {
+       	  $('#nav-logo').removeClass('hidden')
+          $('nav').removeClass('nav-pills');
+          $('nav').addClass('navbar-default');
+          $('nav').addClass('panel-shadow');
+          $('.navbar-brand').css('color','#454545');
+        } else{
+          $('.navbar-brand').css('color','white');
+          if($('nav').hasClass('nav-pills') == false){
+            $('nav').addClass('nav-pills');
+          }
+          if($('#nav-logo').hasClass('hidden') == false){
+            $('#nav-logo').addClass('hidden')
+          }
+          $('nav').removeClass('navbar-default');
+          $('nav').removeClass('panel-shadow');
+        }
+      });
+
+      console.log($('#nav-logo').is(':visible'));
+      $('#hamburger-button').click(function(){
+      	if($('#nav-logo').is(':visible')){
+      		$('#nav-logo').hide();
+      	}else{
+      		$('#nav-logo').show(800);
+      	}
+      });
+    </script>
+  </body>
+</html>
