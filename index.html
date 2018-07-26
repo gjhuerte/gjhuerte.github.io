@@ -15,16 +15,36 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;" style="-webkit-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75); box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);">
-      <div class="" id="navbarTogglerDemo01">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="outline: none; border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand" href="#">Gabriel Jay Huerte</a>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span class="fa fa-facebook"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="fa fa-twitter"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="fa fa-linkedin"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="fa fa-skype"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="fa fa-github"></span></a>
+          </li>
+        </ul>
       </div>
     </nav> <!-- Navigation -->
 
     <!-- Introduction -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: #222222; color: #FFFFFF;">
+    <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Et harum quidem rerum facilis est</h1>
-        <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+        <h1 class="display-4">Hello World!</h1>
+        <p class="lead">What can you do with all the time in the world? Write code.</p>
       </div> 
     </div> <!-- Introduction -->
 
@@ -33,74 +53,36 @@
       <div class="col-sm-12">
         <h2>Projects</h2>
       </div>
-
-      <!-- Project List -->
-      <div class="row mt-2">
-        <!-- Laboratory Resource Management System -->
-        <div class="col-sm-4">
-          <div class="card" style="border: none;">
-            <div class="card-body">
-              <h5 class="card-title">LabRMS</h5>
-              <p class="card-text">Laboratory Resource Management System</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div> <!-- / Laboratory Resource Management System -->
-        <!-- Supplies Inventory Management System -->
-        <div class="col-sm-4">
-          <div class="card" style="border: none;">
-            <div class="card-body">
-              <h5 class="card-title">SIMS</h5>
-              <p class="card-text">Supplies Inventory Management System</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div> <!-- / Supplies Inventory Management System -->
-        <!-- Home and Connect -->
-        <div class="col-sm-4">
-          <div class="card" style="border: none;">
-            <div class="card-body">
-              <h5 class="card-title">Slim Framework</h5>
-              <p class="card-text">A simple MVC Framework made using Php</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div> <!-- / Home and Connect -->
-      </div> <!-- Project List -->
     </section> <!-- Projects Section -->
 
-    <section class="" id="">
-      <div class="row">
-        <div class="col-sm-6">
-          <img class="float-left" width=100% height=auto  src="img/computer-and-mug.jpg" />
-        </div>
-        <div class="col-sm-6" style="background-color: white;">
-          <h3>Sell yourself~</h3>
-          <p class="text-justify">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Introduction -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Et harum quidem rerum facilis est</h1>
-        <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
-      </div> 
-    </div> <!-- Introduction -->
-
-    <!-- Initial Quote -->
     <section class="container">
-      <blockquote class="blockquote text-center">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-      </blockquote>
-    </section> <!-- Initial Quote -->
-
-    <!-- Social Media Icons -->
-    <section>
-    </section> <!-- Social Media Icons -->
+        <div class="row">
+          <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">LabRMS</a>
+              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">SIMS</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Slim Framework</a>
+              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Workstation Security</a>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                Laboratory Resource Management System
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                Supplies Inventory Management System
+              </div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                A simple framework made using Php and Composer
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                Set of tools for additional security in a workstation
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
