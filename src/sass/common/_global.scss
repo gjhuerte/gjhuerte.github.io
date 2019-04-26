@@ -1,0 +1,38 @@
+body {
+	font-family: $font-family-roboto;
+}
+
+.font-montserrat {
+	font-family: $font-family-montserrat;
+}
+
+.font-roboto {
+	font-family: $font-family-roboto;
+}
+
+.bg-dark-saturated-blue {
+	background-color: $dark-saturated-blue;
+}
+
+.bg-midnight-blue {
+	background-color: $midnight-blue;
+}
+
+.white {
+	color: white;
+}
+
+.white:hover {
+	color: $tertiary-light-2;
+}
+
+.cloud-white,
+.cloud-white:hover {
+	color: $cloud-white;
+}
+
+.bg-cloud-white,
+.bg-cloud-white:hover {
+	background-color: $cloud-white;
+}
+

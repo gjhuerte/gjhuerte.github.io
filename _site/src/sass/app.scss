@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import "~font-awesome/scss/font-awesome.scss";
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "common/global";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/navbar";
