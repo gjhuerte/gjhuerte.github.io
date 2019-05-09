@@ -61,39 +61,43 @@ title: "Gabriel Jay Huerte"
 			            <h6 class="mt-2 font-montserrat">Web Developer</h6>
 			        </div>
 			    </div>
-			    <div class="col-md-8" style="background-color: #eff1f0;">
-			        <p class="text-justify p-5" style="line-height: 3em;">
+			    <div class="col-md-8 mt-2" style="background-color: #eff1f0;">
+			        <p class="text-justify py-3 px-2" style="line-height: 2em; font-size: 17px;">
 			            Let me introduce myself for a bit. I am Gabriel Jay Huerte, a coding enthusiast. I’ve been a coder for almost four(4) years. It all started on my freshmen year at college. That’s the first time I’ve discovered the power and fun behind coding. Furthurmore, for the past year, I’ve been experimenting the feels of different coding environment(except for mac as it’s toooo pricy). I’ve learn the pros and cons of coding in linux versus windows. Aside from that, I’ve used different languages in coding mentioned above are my recently used languages/scripts in my development
 			        </p>
 			    </div>
 			</div>    
 		</section>
-	    <section id="projects-section">
-		    <div class="row my-5 py-5">
-			    <div class="col-sm-12">
-			        <h1 class="font-roboto text-center">Projects</h1>
-			    </div>
-			    <div class="col-sm-12">
-			        <p class="font-montserrat text-center">Here are some of the projects I’ve developed. during my studying hours</p>
-			    </div>
-			    <div class="col-md-4">
-			        <a href="https://github.com/gjhuerte/labrms" class="col-sm-12">
-			            <img class="rounded mx-auto d-block" height="80px" src="/images/projects/labrms-logo.png" />
-			        </a>
-			    </div>
-			    <div class="col-md-4">
-			        <a href="https://github.com/gjhuerte/sims" class="col-sm-12">
-			            <img class="rounded mx-auto d-block" height="80px" src="/images/projects/sims-logo.png" />
-			        </a>
-			    </div>
-			    <div class="col-md-4">
-			        <a href="#" class="col-sm-12">
-			            <img class="rounded mx-auto d-block" height="80px" src="/images/projects/homeandconnect-logo.png" />
-			        </a>
-			    </div>
+	    <section id="projects-section mb-3">
+		    <div class="row mt-5 d-flex justify-content-center align-items-center">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 class="font-roboto text-center">Projects</h1>
+					</div>
+					<div class="col-sm-12">
+						<p class="font-montserrat text-center">Here are some of the projects I’ve developed. during my studying hours</p>
+					</div>
+				</div>
+				<div class="row px-2 mx-2 d-flex justify-content-center align-items-center">
+					<div class="col-md-4">
+						<a href="https://github.com/gjhuerte/labrms" class="col-sm-12">
+							<img class="rounded mx-auto img-fluid d-block" height="80px" src="/images/projects/labrms-logo.png" />
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://github.com/gjhuerte/sims" class="col-sm-12">
+							<img class="rounded mx-auto img-fluid d-block" height="80px" src="/images/projects/sims-logo.png" />
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#" class="col-sm-12">
+							<img class="rounded mx-auto img-fluid d-block" height="80px" src="/images/projects/homeandconnect-logo.png" />
+						</a>
+					</div>
+				</div>
 			</div>    
 		</section>
-	    <section id="simple-quote-section" class="bg-cloud-white p-5">
+	    <section id="simple-quote-section" class="row bg-cloud-white p-5">
 	    	<blockquote class="blockquote text-center">
 			    <p class="mr-0 display-4 font-montserrat">When you want something, all the universe conspires in helping you to achieve it.</p>
 			    <footer class="blockquote-footer font-montserrat"><cite title="Source Title">Paulo Coelho</cite></footer>
