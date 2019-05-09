@@ -68,7 +68,7 @@ title: "Gabriel Jay Huerte"
 			    </div>
 			</div>    
 		</section>
-	    <section id="projects-section mb-3">
+	    <section id="projects-section" class="mb-3">
 		    <div class="row mt-5 d-flex justify-content-center align-items-center">
 				<div class="row">
 					<div class="col-sm-12">
