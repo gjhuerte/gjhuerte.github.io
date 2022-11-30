@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="f1kX8seHFam2JHDrmTEB8HD5FKW6cTIVw6ySmdnP" />
+        <title>{{ page.title }}</title>
+        <link href="https://gjhuerte.github.io/css/app.css" rel="stylesheet" />
+        
+        <script type="text/javascript" src="https://gjhuerte.github.io/js/app.js"></script>
+
+        {% include google_tag_manager_script.html %}
+    </head>
+    <body style="background-color: #e5e5e5">
+        {% include google_tag_manager_noscript.html %}
+        
+        <div class="offset-md-3 col-md-6 offset-lg-3 col-lg-6">
+            <div class="card card-body">
+                {{ content }}
+            </div>
+        </div>
+    </body>     
+</html>
