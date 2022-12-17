@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: scheduleit_pages
 title: Privacy Policy
 permalink: /scheduleit/privacy-policy
 ---

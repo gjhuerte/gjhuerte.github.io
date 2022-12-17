@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: scheduleit_pages
 title: Terms and Conditions
 permalink: /scheduleit/terms-and-conditions
 ---

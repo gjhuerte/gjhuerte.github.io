@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="f1kX8seHFam2JHDrmTEB8HD5FKW6cTIVw6ySmdnP" />
+        <link rel="icon" type="image/x-icon" href="/images/scheduleit/favicon.ico">
+        <title>{{ page.title }}</title>
+        <link href="https://gjhuerte.github.io/css/app.css" rel="stylesheet" />
+        
+        <script type="text/javascript" src="https://gjhuerte.github.io/js/app.js"></script>
+
+        {% include google_tag_manager_script.html %}
+    </head>
+    <body style="background-color: #e5e5e5">
+        {% include google_tag_manager_noscript.html %}
+        
+        <div class="offset-md-3 col-md-6 offset-lg-3 col-lg-6">
+            <div class="card card-body">
+                <d class="row">
+                    <d class="col-12">
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="/images/scheduleit/logo_nb.png" alt="Logo" width="36px">
+                            <h4 class="pl-2">SCHEDULEIT</h4>
+                        </div>
+                    </d>
+                </d>
+                <hr />
+                {{ content }}
+            </div>
+        </div>
+    </body>     
+</html>
