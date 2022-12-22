@@ -10,6 +10,21 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.0.9</p>
+			<ul>
+				<li>Hotfix for crashing alarm</li>
+			</ul>
+		</div>
+		<div class="col-12">
+			<p>v1.0.8</p>
+			<ul>
+				<li>Added links in more screen</li>
+				<li>Allow creation of alarms</li>
+				<li>Backup will run automatically everyday at 12:00AM. Make sure to disable optimization for this app</li>
+				<li>More optimization</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.0.7</p>
 			<ul>
 				<li>Fixed toggle issue on timer</li>
