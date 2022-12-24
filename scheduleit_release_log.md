@@ -10,6 +10,19 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.0.10</p>
+			<ul>
+				<li>Added custom alert</li>
+				<li>Added custom loader</li>
+				<li>Added auto-trigger for repeating notes</li>
+				<li>Added auto-backup of notes</li>
+				<li>Added settings for auto backup time</li>
+				<li>Added settings for auto repeat of notes</li>
+				<li>Moved manual trigger for repeating notes</li>
+				<li>Fixed various issues regarding ads</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.0.9</p>
 			<ul>
 				<li>Hotfix for crashing alarm</li>
