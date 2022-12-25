@@ -10,6 +10,12 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.1.0</p>
+			<ul>
+				<li>Added goals</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.0.11</p>
 			<ul>
 				<li>Improve loader and alert preview</li>
