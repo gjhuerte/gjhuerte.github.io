@@ -10,7 +10,25 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
-			<p>v1.1.0</p>
+			<p>v1.2.0</p>
+			<ul>
+				<li>Added dots and changed color for calendar view</li>
+				<li>Added edit button when previewing notes, todo, and templates</li>
+				<li>Added delete button when previewing notes, todo, and templates</li>
+				<li>Various fixes and optimization</li>
+			</ul>
+		</div>
+		<div class="col-12">
+			<p>v1.1.1</p>
+			<ul>
+				<li>Fixed active bottom navigation not set properly</li>
+				<li>Added active textfield cursor lines</li>
+				<li>Close keyboard upon click outside of textfields</li>
+				<li>Better animation for sliding action of todo and goals</li>
+			</ul>
+		</div>
+		<div class="col-12">
+			<p>v1.0.12</p>
 			<ul>
 				<li>Added goals</li>
 			</ul>
