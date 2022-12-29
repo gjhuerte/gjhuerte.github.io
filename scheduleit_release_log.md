@@ -10,6 +10,12 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.3.1</p>
+			<ul>
+				<li>Removed notification on successful generation of repeating notes</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.3.0</p>
 			<ul>
 				<li>Fixed auto backup not working properly</li>
