@@ -10,6 +10,14 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.3.0</p>
+			<ul>
+				<li>Fixed auto backup not working properly</li>
+				<li>Fixed auto repeat notes not working properly</li>
+				<li>Fixed scheduled notes with alarm not working properly</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.2.0</p>
 			<ul>
 				<li>Added dots and changed color for calendar view</li>
