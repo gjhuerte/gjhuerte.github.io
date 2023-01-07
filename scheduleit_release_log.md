@@ -10,6 +10,13 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.3.3</p>
+			<ul>
+				<li>Fixed issues for repeating notes not generating properly.</li>
+				<li>Added settings for optional background service</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.3.2</p>
 			<ul>
 				<li>Fixed issues with alarm notification</li>
