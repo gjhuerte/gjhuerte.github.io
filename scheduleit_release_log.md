@@ -10,6 +10,14 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.4.0</p>
+			<ul>
+				<li>Moved ads to More page for supporting the dev.</li>
+				<li>Fixed issues in generating repeating notes.</li>
+				<li>Fixed issues in disabling notification.</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.3.3</p>
 			<ul>
 				<li>Fixed issues for repeating notes not generating properly.</li>
