@@ -10,6 +10,12 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.6.0</p>
+			<ul>
+				<li>Added accent colors.</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.5.0</p>
 			<ul>
 				<li>Add gesture navigation on switching page.</li>
