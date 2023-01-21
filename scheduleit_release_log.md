@@ -10,6 +10,13 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.5.0</p>
+			<ul>
+				<li>Add gesture navigation on switching page.</li>
+				<li>Add filter for todos and goals.</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.4.0</p>
 			<ul>
 				<li>Moved ads to More page for supporting the dev.</li>
