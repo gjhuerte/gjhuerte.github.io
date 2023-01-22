@@ -10,6 +10,12 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.6.1</p>
+			<ul>
+				<li>Fixed accent color not applied on some inputs.</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.6.0</p>
 			<ul>
 				<li>Added accent colors.</li>
