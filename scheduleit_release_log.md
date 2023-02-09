@@ -10,6 +10,14 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.7.0</p>
+			<ul>
+				<li>Reworked view page for todos and goals.</li>
+				<li>Added inner checklist for todos and goals.</li>
+				<li>Fixed background service fires upon disabling.</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.6.2</p>
 			<ul>
 				<li>Optimized accent colors on some buttons.</li>
