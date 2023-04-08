@@ -10,6 +10,12 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v1.8.0</p>
+			<ul>
+				<li>View item when clicking checkbox items in todo and goals</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.7.1</p>
 			<ul>
 				<li>Fixed duplicate checkbox created on initial load.</li>
