@@ -17,6 +17,20 @@ permalink: /scheduleit/release-logs
 			</ul>
 		</div>
 		<div class="col-12">
+			<p>v1.10.0</p>
+			<ul>
+				<li>Added checkbox when viewing a note</li>
+				<li>Theme and color scheme optimization</li>
+			</ul>
+		</div>
+		<div class="col-12">
+			<p>v1.9.0</p>
+			<ul>
+				<li>Added support for material you theming</li>
+				<li>Added system theme support</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v1.8.0</p>
 			<ul>
 				<li>View item when clicking checkbox items in todo and goals</li>
