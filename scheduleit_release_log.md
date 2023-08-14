@@ -10,6 +10,14 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.0.1</p>
+			<ul>
+				<li>Fixed wallets not showing if more than 10 items</li>
+				<li>Added orderable wallet list</li>
+				<li>Wider notes</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.0</p>
 			<ul>
 				<li>Revised UI for the app.</li>
