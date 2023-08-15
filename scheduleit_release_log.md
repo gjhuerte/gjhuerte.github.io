@@ -10,6 +10,15 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.0.3</p>
+			<ul>
+				<li>Fixed cursor color not visible</li>
+				<li>Fixed amount not showing in finance screen</li>
+				<li>Added formatted amount in wallet screen</li>
+				<li>Added formatted amount in finance screen</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.2</p>
 			<ul>
 				<li>Fixed implementation of backup and restore</li>
