@@ -10,6 +10,13 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.0.2</p>
+			<ul>
+				<li>Fixed implementation of backup and restore</li>
+				<li>Added custom currency</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.1</p>
 			<ul>
 				<li>Fixed wallets not showing if more than 10 items</li>
