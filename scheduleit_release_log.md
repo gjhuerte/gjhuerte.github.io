@@ -10,6 +10,13 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.0.4</p>
+			<ul>
+				<li>Added calendar view for todo</li>
+				<li>Reduced space between card in backup and restore</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.3</p>
 			<ul>
 				<li>Fixed cursor color not visible</li>
