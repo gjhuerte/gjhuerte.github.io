@@ -10,6 +10,16 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.0.5</p>
+			<ul>
+				<li>Added sorting for goals</li>
+				<li>Fixed todo calendar not switching months</li>
+				<li>Fixed todo calendar showing irrelevant notes</li>
+				<li>Removed add icon in todo calendar</li>
+				<li>Fixed todo add icon removed</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.4</p>
 			<ul>
 				<li>Added calendar view for todo</li>
