@@ -10,6 +10,14 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.0.7</p>
+			<ul>
+				<li>Added checklist for todos</li>
+				<li>Added repeating todos</li>
+				<li>Fixed todos not showing in calendar</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.6</p>
 			<ul>
 				<li>Fixed filter by wallet not working</li>
