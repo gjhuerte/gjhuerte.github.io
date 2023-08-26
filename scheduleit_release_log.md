@@ -10,6 +10,15 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.0.8</p>
+			<ul>
+				<li>Fixed balance not working in view wallet</li>
+				<li>Added checkbox for wallet to be calculated in overall total in wallets page</li>
+				<li>Added checklist for notes</li>
+				<li>Added auto backup</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.7</p>
 			<ul>
 				<li>Added checklist for todos</li>
