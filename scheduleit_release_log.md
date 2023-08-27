@@ -10,6 +10,15 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.1.0</p>
+			<ul>
+				<li>Added markdown support for notes</li>
+				<li>Added simple protection for details in notes</li>
+				<li>Fixed inconsistent borders in notes form</li>
+				<li>Fixed cursor issues in details field</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.0.8</p>
 			<ul>
 				<li>Fixed balance not working in view wallet</li>
