@@ -10,6 +10,16 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.2.0</p>
+			<ul>
+				<li>Optimize creation of finance</li>
+				<li>Revise ui for finance screen</li>
+				<li>Order transactions when viewing finance by descending based on date specified</li>
+				<li>Removed unecessary gestures</li>
+				<li>Added back gesture on finance calculation page</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.1.0</p>
 			<ul>
 				<li>Added markdown support for notes</li>
