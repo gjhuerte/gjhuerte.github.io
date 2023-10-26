@@ -10,6 +10,12 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.3.0</p>
+			<ul>
+				<li>Added expense tracker</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.2.0</p>
 			<ul>
 				<li>Optimize creation of finance</li>
