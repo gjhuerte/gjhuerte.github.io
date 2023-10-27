@@ -10,6 +10,14 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.4.0</p>
+			<ul>
+				<li>Added duplicating of expenses</li>
+				<li>Added creating of transaction from expenses</li>
+				<li>Added calculation of wallet in expense view</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.3.0</p>
 			<ul>
 				<li>Added expense tracker</li>
