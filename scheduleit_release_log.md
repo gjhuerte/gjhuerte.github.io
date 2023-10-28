@@ -10,6 +10,15 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.5.0</p>
+			<ul>
+				<li>Added amount when creating a wallet</li>
+				<li>Fixed text exceeding width when viewing note</li>
+				<li>Fixed crash if theres no wallet created</li>
+				<li>Revise add button in finance and included more tools on a glance</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.4.0</p>
 			<ul>
 				<li>Added duplicating of expenses</li>
