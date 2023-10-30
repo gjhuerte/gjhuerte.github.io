@@ -10,6 +10,13 @@ permalink: /scheduleit/release-logs
 	</div>
 	<div class="mb-3">
 		<div class="col-12">
+			<p>v2.5.1</p>
+			<ul>
+				<li>Removed expense icon on top of finance screen</li>
+				<li>Fixed editing due date on expense not working</li>
+			</ul>
+		</div>
+		<div class="col-12">
 			<p>v2.5.0</p>
 			<ul>
 				<li>Added amount when creating a wallet</li>
