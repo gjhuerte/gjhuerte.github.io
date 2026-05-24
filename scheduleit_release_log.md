@@ -4,9 +4,9 @@ title: Release Logs
 permalink: /scheduleit/release-logs
 ---
 
-<div class="prose prose-slate max-w-none">
-	<div class="mb-8 border-b border-gray-100 pb-4">
-		<h1 class="text-3xl font-extrabold text-gray-900 tracking-tight m-0">Release Logs</h1>
+<div class="prose prose-slate max-w-none prose-p:text-slate-600 prose-a:text-indigo-600 hover:prose-a:text-indigo-500 prose-headings:text-slate-800">
+	<div class="mb-10 border-b border-slate-100/60 pb-6 text-center sm:text-left">
+		<h1 class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-indigo-800 tracking-tight m-0">Release Logs</h1>
 	</div>
 	<div class="space-y-6">
 		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">

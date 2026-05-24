@@ -5,11 +5,11 @@ permalink: /scheduleit/terms-and-conditions
 ---
 
 
-<div class="prose prose-slate max-w-none prose-p:text-justify prose-a:text-blue-600 hover:prose-a:text-blue-800">
-	<div class="mb-8 border-b border-gray-100 pb-4">
-		<h1 class="text-3xl font-extrabold text-gray-900 tracking-tight m-0">Terms and Conditions</h1>
+<div class="prose prose-slate max-w-none prose-p:text-slate-600 prose-a:text-indigo-600 hover:prose-a:text-indigo-500 prose-headings:text-slate-800 prose-strong:text-indigo-900">
+	<div class="mb-10 border-b border-slate-100/60 pb-6 text-center sm:text-left">
+		<h1 class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-indigo-800 tracking-tight m-0">Terms and Conditions</h1>
 	</div>
-	<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
+	<div class="bg-white/80 backdrop-blur-sm rounded-[2rem] shadow-sm ring-1 ring-slate-900/5 p-6 sm:p-10 leading-relaxed">
 		<p class="text-justify mb-3">These terms and conditions outline the rules and regulations for the use of Scheduleit's Website and Application, located at Scheduleitapp.github.io.</p>
 		<p class="text-justify mb-3">By accessing this website and using our app we assume you accept these terms and conditions. Do not continue to use Scheduleit App if you do not agree to take all of the terms and conditions stated on this page.</p>
 		<p class="text-justify mb-3">The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
