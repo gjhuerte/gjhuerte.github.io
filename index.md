@@ -5,65 +5,86 @@
 layout: home
 title: "My Portfolio"
 ---
-<section id="content-body">
-	<div class="container-fluid">
-	    <section id="technologies-used-section">
-	    	<div class="row my-5 mx-auto">
-			    <div class="col-sm-12">
-			        <h1 class="text-center font-roboto">Technologies</h1>
-			    </div>
-			    <div class="col-sm-12">
-			        <p class="text-center font-montserrat">Listing some of the languages/tools/scripts I’ve used for development</p>
-			    </div>
-			    <div class="col-sm-12 row text-center my-5">
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/php-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/laravel-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/mysql-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/javascript-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/sass-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/java-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/react-native-logo.jpg" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/nodejs-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/github-logo.png" />
-			        </a>
-			    </div>
-			</div>    	
-		</section>
-	    <section id="about-section">
-	    	<div class="row py-4" style="background-color: #e5e5e5;">
-		        <div class="col-sm-12">
-		            <a href="#" class="rounded-circle d-flex flex-row justify-content-center align-items-center">
-		                <img class="img rounded-circle col-md-3 col-sm-4 col-xs-6" src="/images/vector-image.jpg" />
-		            </a>
-		        </div>
-		        <div class="col-sm-12 text-center">
-		            <h3 class="mt-4 font-montserrat">Hi! I’m Gabriel Jay</h3>
-		            <h6 class="mt-2 font-montserrat">Web Developer</h6>
-		        </div>
-			</div>    
-		</section>
-	    <section id="simple-quote-section" class="row bg-cloud-white p-5">
-	    	<blockquote class="blockquote mx-auto text-center">
-			    <p class="m-0 font-montserrat">When you want something, all the universe conspires in helping you to achieve it.</p>
-			    <footer class="blockquote-footer font-montserrat"><cite title="Source Title">Paulo Coelho</cite></footer>
-			</blockquote>    
-		</section>
-	</div>
-</section>
+<div class="min-h-screen bg-gray-50 text-gray-900 overflow-hidden relative">
+    
+    <!-- Background glowing orbs -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <!-- Hero / About Section -->
+    <section id="about-section" class="relative z-10 pt-36 pb-16 px-4 max-w-5xl mx-auto flex flex-col items-center text-center" x-data="{ show: false }" x-init="setTimeout(() => show = true, 500)">
+        <div x-show="show" x-transition.opacity.duration.1000ms.translate.y.20px>
+            <a href="#" class="inline-block relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                <img class="relative w-40 h-40 object-cover rounded-full border-4 border-white shadow-xl" src="/images/vector-image.jpg" alt="Gabriel Jay" />
+            </a>
+            <h1 class="mt-8 text-5xl md:text-6xl font-extrabold tracking-tight">
+                Hi! I’m <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">Gabriel Jay</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-500 font-light tracking-wide uppercase letter-spacing-2">Web Developer</p>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies-used-section" class="relative z-10 py-16 px-4" x-data="{ show: false }" x-init="setTimeout(() => show = true, 800)">
+        <div class="max-w-6xl mx-auto" x-show="show" x-transition.opacity.duration.1000ms.translate.y.20px>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Technologies</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Listing some of the languages, tools, and frameworks I’ve used for development.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- Tech Card -->
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/php-logo.png" alt="PHP" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/laravel-logo.png" alt="Laravel" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/mysql-logo.png" alt="MySQL" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/javascript-logo.png" alt="JavaScript" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/sass-logo.png" alt="Sass" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/java-logo.png" alt="Java" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/react-native-logo.jpg" alt="React Native" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/nodejs-logo.png" alt="Node.js" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/github-logo.png" alt="GitHub" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="simple-quote-section" class="relative z-10 py-24 px-4" x-data="{ show: false }" x-init="setTimeout(() => show = true, 1100)">
+        <div class="max-w-4xl mx-auto" x-show="show" x-transition.opacity.duration.1000ms.translate.y.20px>
+            <div class="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-[2rem] p-10 md:p-16 shadow-xl relative overflow-hidden">
+                <!-- Quote Icon -->
+                <div class="absolute top-8 left-8 text-blue-500/20 text-8xl font-serif">"</div>
+                
+                <blockquote class="relative z-10 text-center">
+                    <p class="text-xl md:text-3xl text-gray-700 font-light italic leading-relaxed mb-8">
+                        When you want something, all the universe conspires in helping you to achieve it.
+                    </p>
+                    <footer class="flex items-center justify-center space-x-4">
+                        <div class="w-12 h-[1px] bg-blue-500"></div>
+                        <cite class="text-blue-400 font-semibold tracking-wide uppercase text-sm">Paulo Coelho</cite>
+                        <div class="w-12 h-[1px] bg-blue-500"></div>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+</div>

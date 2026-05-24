@@ -1,174 +1,224 @@
-
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="f1kX8seHFam2JHDrmTEB8HD5FKW6cTIVw6ySmdnP" />
-        <title>My Portfolio</title>
-        <link href="https://gjhuerte.github.io/css/app.css" rel="stylesheet" />
-        
-        <script type="text/javascript" src="https://gjhuerte.github.io/js/app.js"></script>
 
-        <!-- Google Tag Manager -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="f1kX8seHFam2JHDrmTEB8HD5FKW6cTIVw6ySmdnP" />
+    <title>My Portfolio</title>
+    <link href="https://gjhuerte.github.io/css/app.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://gjhuerte.github.io/js/app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NCRSBXL');</script>
 <!-- End Google Tag Manager -->
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
+</head>
+
+<body x-data="{ loaded: false }"
+    x-init="window.addEventListener('load', () => { setTimeout(() => loaded = true, 300) })"
+    class="bg-gray-50 text-gray-900 font-sans antialiased font-['Inter']">
+    <!-- Preloader -->
+    <div x-show="!loaded" x-transition.opacity.duration.500ms
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
+        <div class="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRSBXL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
+    <div class="fixed top-0 inset-x-0 z-50 flex justify-center mt-6 px-4" x-data="{ open: false }">
+    <nav class="w-full max-w-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-sm rounded-full px-6 py-3 flex items-center justify-between">
         
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarText" 
-        aria-controls="navbarText" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-    		<li class="nav-item">
-    			<a 
-              class="nav-link" 
-              href="#footer"
-              >Want to hire me?
-          </a>
-    		</li>
-        </ul>
-        <ul class="navbar-nav mx-auto">
-        </ul>
-        <ul class="navbar-nav ml-auto">
-    		<li class="nav-item">
-    			<a 
-              class="nav-link" 
-              href="#about-section">
-              About
-          </a>
-    		</li>
-    		<li class="nav-item">
-    			<a 
-              class="nav-link" 
-              href="#projects-section">
-              Projects
-          </a>
-    		</li>
-        </ul>
+        <!-- Logo / Name -->
+        <a href="/" class="text-gray-900 font-bold text-lg tracking-tight flex items-center gap-2">
+            <span class="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-teal-400 text-white flex items-center justify-center text-sm font-black shadow-md">GJ</span>
+            <span>Gabriel</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="/#about-section" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100/50 rounded-full transition-all">About</a>
+            <a href="/projects/" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100/50 rounded-full transition-all">Projects</a>
+            <a href="/#technologies-used-section" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100/50 rounded-full transition-all">Technologies</a>
+        </div>
+
+        <!-- CTA -->
+        <div class="hidden md:block">
+            <a href="#footer" class="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 rounded-full shadow-sm hover:shadow-md transition-all focus:ring-2 focus:ring-gray-900 focus:ring-offset-2">
+                Hire Me
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button @click="open = !open" class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none rounded-full hover:bg-gray-100 transition-colors">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" style="display: none;" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div x-show="open" 
+         @click.away="open = false"
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-2 scale-95"
+         x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+         x-transition:leave-end="opacity-0 -translate-y-2 scale-95"
+         style="display: none;"
+         class="absolute top-20 w-full max-w-sm bg-white/90 backdrop-blur-xl border border-gray-200 shadow-xl rounded-3xl p-4 flex flex-col space-y-2 md:hidden">
+        <a @click="open = false" href="/#about-section" class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-xl transition-colors">About</a>
+        <a @click="open = false" href="/projects/" class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-xl transition-colors">Projects</a>
+        <a @click="open = false" href="/#technologies-used-section" class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-xl transition-colors">Technologies</a>
+        <a @click="open = false" href="#footer" class="px-4 py-3 text-sm font-bold text-center text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors mt-2">Hire Me</a>
     </div>
-</nav>
-        
-<section id="primary-jumbotron-section">
-	<div class="jumbotron m-0 p-0" style="background: none;">
-		<img 
-			class="img" 
-			src="/images/computer-header.png" 
-			alt="Responsive header" 
-			width=100% />
-	</div>
-</section>
-        
-        <section id="content-body">
-	<div class="container-fluid">
-	    <section id="technologies-used-section">
-	    	<div class="row my-5 mx-auto">
-			    <div class="col-sm-12">
-			        <h1 class="text-center font-roboto">Technologies</h1>
-			    </div>
-			    <div class="col-sm-12">
-			        <p class="text-center font-montserrat">Listing some of the languages/tools/scripts I’ve used for development</p>
-			    </div>
-			    <div class="col-sm-12 row text-center my-5">
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/php-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/laravel-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/mysql-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/javascript-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/sass-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/java-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/react-native-logo.jpg" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/nodejs-logo.png" />
-			        </a>
-			        <a href="#" class="my-2 col-12 col-md-4 col-sm-3 d-flex flex-row justify-content-center align-items-center">
-			            <img class="img img-fluid" src="/images/technologies/github-logo.png" />
-			        </a>
-			    </div>
-			</div>    	
-		</section>
-	    <section id="about-section">
-	    	<div class="row py-4" style="background-color: #e5e5e5;">
-		        <div class="col-sm-12">
-		            <a href="#" class="rounded-circle d-flex flex-row justify-content-center align-items-center">
-		                <img class="img rounded-circle col-md-3 col-sm-4 col-xs-6" src="/images/vector-image.jpg" />
-		            </a>
-		        </div>
-		        <div class="col-sm-12 text-center">
-		            <h3 class="mt-4 font-montserrat">Hi! I’m Gabriel Jay</h3>
-		            <h6 class="mt-2 font-montserrat">Web Developer</h6>
-		        </div>
-			</div>    
-		</section>
-	    <section id="simple-quote-section" class="row bg-cloud-white p-5">
-	    	<blockquote class="blockquote mx-auto text-center">
-			    <p class="m-0 font-montserrat">When you want something, all the universe conspires in helping you to achieve it.</p>
-			    <footer class="blockquote-footer font-montserrat"><cite title="Source Title">Paulo Coelho</cite></footer>
-			</blockquote>    
-		</section>
-	</div>
-</section>
+</div>
+    <!-- Header removed for modern design -->
+
+    <div class="min-h-screen bg-gray-50 text-gray-900 overflow-hidden relative">
+    
+    <!-- Background glowing orbs -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <!-- Hero / About Section -->
+    <section id="about-section" class="relative z-10 pt-36 pb-16 px-4 max-w-5xl mx-auto flex flex-col items-center text-center" x-data="{ show: false }" x-init="setTimeout(() =&gt; show = true, 500)">
+        <div x-show="show" x-transition.opacity.duration.1000ms.translate.y.20px="">
+            <a href="#" class="inline-block relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                <img class="relative w-40 h-40 object-cover rounded-full border-4 border-white shadow-xl" src="/images/vector-image.jpg" alt="Gabriel Jay" />
+            </a>
+            <h1 class="mt-8 text-5xl md:text-6xl font-extrabold tracking-tight">
+                Hi! I’m <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">Gabriel Jay</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-500 font-light tracking-wide uppercase letter-spacing-2">Web Developer</p>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies-used-section" class="relative z-10 py-16 px-4" x-data="{ show: false }" x-init="setTimeout(() =&gt; show = true, 800)">
+        <div class="max-w-6xl mx-auto" x-show="show" x-transition.opacity.duration.1000ms.translate.y.20px="">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Technologies</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Listing some of the languages, tools, and frameworks I’ve used for development.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- Tech Card -->
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/php-logo.png" alt="PHP" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/laravel-logo.png" alt="Laravel" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/mysql-logo.png" alt="MySQL" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/javascript-logo.png" alt="JavaScript" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/sass-logo.png" alt="Sass" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/java-logo.png" alt="Java" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/react-native-logo.jpg" alt="React Native" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/nodejs-logo.png" alt="Node.js" />
+                </div>
+                <div class="group bg-white/60 backdrop-blur-sm border border-gray-200/80 rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+                    <img class="w-16 h-16 object-contain opacity-80 group-hover:opacity-100 transition duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" src="/images/technologies/github-logo.png" alt="GitHub" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="simple-quote-section" class="relative z-10 py-24 px-4" x-data="{ show: false }" x-init="setTimeout(() =&gt; show = true, 1100)">
+        <div class="max-w-4xl mx-auto" x-show="show" x-transition.opacity.duration.1000ms.translate.y.20px="">
+            <div class="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-[2rem] p-10 md:p-16 shadow-xl relative overflow-hidden">
+                <!-- Quote Icon -->
+                <div class="absolute top-8 left-8 text-blue-500/20 text-8xl font-serif">"</div>
+                
+                <blockquote class="relative z-10 text-center">
+                    <p class="text-xl md:text-3xl text-gray-700 font-light italic leading-relaxed mb-8">
+                        When you want something, all the universe conspires in helping you to achieve it.
+                    </p>
+                    <footer class="flex items-center justify-center space-x-4">
+                        <div class="w-12 h-[1px] bg-blue-500"></div>
+                        <cite class="text-blue-400 font-semibold tracking-wide uppercase text-sm">Paulo Coelho</cite>
+                        <div class="w-12 h-[1px] bg-blue-500"></div>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+</div>
 
 
+    <footer id="footer" class="bg-white border-t border-gray-200 pt-16 pb-8 mt-24">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Let's build something amazing together</h3>
+            <p class="text-gray-500 mb-8 leading-relaxed">
+                If you want to know me more, you can contact me through my social media accounts below. Let's keep in touch and may the code be with you.
+            </p>
+            <a href="mailto:gjhuerte@gmail.com" class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-full shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Hire Me
+            </a>
+            
+            <div class="flex items-center justify-center space-x-6 mt-12 mb-12">
+                <!-- GitHub -->
+                <a href="https://github.com/gjhuerte/" class="text-gray-400 hover:text-gray-900 transition-colors">
+                    <span class="sr-only">GitHub</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/gjhuerte" class="text-gray-400 hover:text-blue-600 transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/gjhuerte" class="text-gray-400 hover:text-blue-500 transition-colors">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
         
-<section id="footer" class="footer-navigation">
-    <div class="upper-footer bg-midnight-blue white">
-	    <div class="col-sm-12 offset-md-4 col-md-4 pt-5 pb-3 text-center">
-	        <a href="mailto:gjhuerte@gmail.com" class="btn btn-outline-success">Hire me</a>
-	    </div>
-	    <div class="col-sm-12 offset-md-4 col-md-4 py-3 text-center">
-	        <p class="font-montserrat">
-	            If you want to know me more, you can contact me through the following social media  accounts I’ll be providing. Lets keep in touch and may the code be with you
-	        </p>
-	    </div>
-	    <div class="col-sm-12 offset-md-4 col-md-4 pt-3 pb-5 text-center">
-	        <a href="https://github.com/gjhuerte/" class="white m-2">
-	            <span class="fa fa-github fa-lg"></span>
-	        </a>
-	        <a href="https://www.linkedin.com/in/gjhuerte" class="white m-2">
-	            <i class="fa fa-linkedin fa-lg"></i>
-	        </a>
-	        <a href="https://www.facebook.com/gjhuerte" class="white m-2">
-	            <i class="fa fa-facebook fa-lg"></i>
-	        </a>
-	    </div>
-	</div>
-	<div class="lower-footer bg-dark-saturated-blue p-2 text-gray text-center">
-		<strong class="text-center">Copyright &copy 05-21-2020</strong>
-	</div>               
-</section>
-    </body>     
+        <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-sm text-gray-400">
+                &copy; <span x-data x-text="new Date().getFullYear()"></span> Gabriel Jay. All rights reserved.
+            </p>
+            <p class="text-sm text-gray-400 mt-4 md:mt-0">
+                Crafted with <span class="text-red-500">&hearts;</span> and code.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+
 </html>
