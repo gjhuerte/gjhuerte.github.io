@@ -4,11 +4,11 @@ title: Privacy Policy
 permalink: /scheduleit/privacy-policy
 ---
 
-<div>
-	<div class="mb-3">
-		<h4>PRIVACY POLICY</h4>
+<div class="prose prose-slate max-w-none prose-p:text-justify prose-a:text-blue-600 hover:prose-a:text-blue-800">
+	<div class="mb-8 border-b border-gray-100 pb-4">
+		<h1 class="text-3xl font-extrabold text-gray-900 tracking-tight m-0">Privacy Policy</h1>
 	</div>
-	<div class="mb-3">
+	<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
 		<p class="text-justify mb-3">
 			At Scheduleit, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by {{ site.title }} and how we use it.
 		</p>

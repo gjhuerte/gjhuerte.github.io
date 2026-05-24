@@ -1,49 +1,75 @@
-
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="f1kX8seHFam2JHDrmTEB8HD5FKW6cTIVw6ySmdnP" />
-        <link rel="icon" type="image/x-icon" href="/images/scheduleit/favicon.ico">
-        <title>Privacy Policy</title>
-        <link href="https://gjhuerte.github.io/css/app.css" rel="stylesheet" />
-        
-        <script type="text/javascript" src="https://gjhuerte.github.io/js/app.js"></script>
 
-        <!-- Google Tag Manager -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/images/scheduleit/logo.png">
+    <title>Privacy Policy</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
+    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NCRSBXL');</script>
 <!-- End Google Tag Manager -->
-    </head>
-    <body style="background-color: #e5e5e5">
-        <!-- Google Tag Manager (noscript) -->
+</head>
+
+<body
+    class="bg-gray-50 text-gray-900 font-sans antialiased selection:bg-blue-200 selection:text-blue-900 min-h-screen py-12 px-4 sm:px-6 lg:px-8 relative overflow-x-hidden">
+
+    <!-- Background decorative elements -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/5 rounded-full blur-[100px] pointer-events-none">
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRSBXL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-        
-        <div class="offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-3 col-lg-6 px-0">
-            <div class="card card-body">
-                <d class="row">
-                    <d class="col-12">
-                        <div class="d-flex flex-row align-items-center">
-                            <img src="/images/scheduleit/logo_nb.png" alt="Logo" width="36px">
-                            <h4 class="pl-2">SCHEDULEIT</h4>
+
+    <div class="max-w-3xl mx-auto relative z-10" x-data="{ show: false }" x-init="setTimeout(() => show = true, 100)">
+        <!-- Modern Card Container -->
+        <div x-show="show" x-transition.opacity.duration.700ms.translate.y.20px
+            class="bg-white/80 backdrop-blur-xl rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-white/50 overflow-hidden">
+            <!-- Header -->
+            <div class="p-8 sm:p-10 border-b border-gray-100 bg-white/50 flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                    <a href="/scheduleit" class="group relative">
+                        <div
+                            class="absolute -inset-2 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full blur opacity-0 group-hover:opacity-40 transition duration-500">
                         </div>
-                    </d>
-                </d>
-                <hr />
-                <div>
-	<div class="mb-3">
-		<h4>PRIVACY POLICY</h4>
+                        <img src="/images/scheduleit/logo_nb.png" alt="ScheduleIt Logo"
+                            class="relative w-14 h-14 object-contain">
+                    </a>
+                    <div>
+                        <h4 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">ScheduleIt</h4>
+                        <p class="text-sm text-gray-500 font-medium">Your schedule, routines, and to-dos</p>
+                    </div>
+                </div>
+                <a href="/projects/"
+                    class="text-sm font-medium text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 px-5 py-2.5 rounded-full transition-colors hidden sm:block">
+                    Back to Projects
+                </a>
+            </div>
+
+            <!-- Main Content -->
+            <div class="p-8 sm:p-10">
+                <div class="prose prose-slate max-w-none prose-p:text-justify prose-a:text-blue-600 hover:prose-a:text-blue-800">
+	<div class="mb-8 border-b border-gray-100 pb-4">
+		<h1 class="text-3xl font-extrabold text-gray-900 tracking-tight m-0">Privacy Policy</h1>
 	</div>
-	<div class="mb-3">
+	<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
 		<p class="text-justify mb-3">
 			At Scheduleit, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by gjhuerte's personal blog and how we use it.
 		</p>
@@ -104,5 +130,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
             </div>
         </div>
-    </body>     
+
+        <!-- Simple Footer Link -->
+        <div x-show="show" x-transition.opacity.duration.1000ms.delay.300ms class="mt-8 text-center sm:hidden">
+            <a href="/projects/" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">
+                &larr; Back to Projects
+            </a>
+        </div>
+    </div>
+</body>
+
 </html>

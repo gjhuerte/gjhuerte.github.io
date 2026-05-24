@@ -4,20 +4,20 @@ title: Release Logs
 permalink: /scheduleit/release-logs
 ---
 
-<div>
-	<div class="mb-3">
-		<h4>RELEASE LOGS</h4>
+<div class="prose prose-slate max-w-none">
+	<div class="mb-8 border-b border-gray-100 pb-4">
+		<h1 class="text-3xl font-extrabold text-gray-900 tracking-tight m-0">Release Logs</h1>
 	</div>
-	<div class="mb-3">
-		<div class="col-12">
-			<p>v2.5.1</p>
+	<div class="space-y-6">
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.5.1</h3>
 			<ul>
 				<li>Removed expense icon on top of finance screen</li>
 				<li>Fixed editing due date on expense not working</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.5.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.5.0</h3>
 			<ul>
 				<li>Added amount when creating a wallet</li>
 				<li>Fixed text exceeding width when viewing note</li>
@@ -25,22 +25,22 @@ permalink: /scheduleit/release-logs
 				<li>Revise add button in finance and included more tools on a glance</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.4.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.4.0</h3>
 			<ul>
 				<li>Added duplicating of expenses</li>
 				<li>Added creating of transaction from expenses</li>
 				<li>Added calculation of wallet in expense view</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.3.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.3.0</h3>
 			<ul>
 				<li>Added expense tracker</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.2.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.2.0</h3>
 			<ul>
 				<li>Optimize creation of finance</li>
 				<li>Revise ui for finance screen</li>
@@ -49,8 +49,8 @@ permalink: /scheduleit/release-logs
 				<li>Added back gesture on finance calculation page</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.1.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.1.0</h3>
 			<ul>
 				<li>Added markdown support for notes</li>
 				<li>Added simple protection for details in notes</li>
@@ -58,8 +58,8 @@ permalink: /scheduleit/release-logs
 				<li>Fixed cursor issues in details field</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.8</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.8</h3>
 			<ul>
 				<li>Fixed balance not working in view wallet</li>
 				<li>Added checkbox for wallet to be calculated in overall total in wallets page</li>
@@ -67,24 +67,24 @@ permalink: /scheduleit/release-logs
 				<li>Added auto backup</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.7</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.7</h3>
 			<ul>
 				<li>Added checklist for todos</li>
 				<li>Added repeating todos</li>
 				<li>Fixed todos not showing in calendar</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.6</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.6</h3>
 			<ul>
 				<li>Fixed filter by wallet not working</li>
 				<li>Added transferring of finance</li>
 				<li>Added suggestions for create and update of finance</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.5</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.5</h3>
 			<ul>
 				<li>Added sorting for goals</li>
 				<li>Fixed todo calendar not switching months</li>
@@ -93,15 +93,15 @@ permalink: /scheduleit/release-logs
 				<li>Fixed todo add icon removed</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.4</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.4</h3>
 			<ul>
 				<li>Added calendar view for todo</li>
 				<li>Reduced space between card in backup and restore</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.3</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.3</h3>
 			<ul>
 				<li>Fixed cursor color not visible</li>
 				<li>Fixed amount not showing in finance screen</li>
@@ -109,124 +109,124 @@ permalink: /scheduleit/release-logs
 				<li>Added formatted amount in finance screen</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.2</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.2</h3>
 			<ul>
 				<li>Fixed implementation of backup and restore</li>
 				<li>Added custom currency</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.1</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.1</h3>
 			<ul>
 				<li>Fixed wallets not showing if more than 10 items</li>
 				<li>Added orderable wallet list</li>
 				<li>Wider notes</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v2.0.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v2.0.0</h3>
 			<ul>
 				<li>Revised UI for the app.</li>
 				<li>Added notes, goals, finance, and todo</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.10.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.10.0</h3>
 			<ul>
 				<li>Added checkbox when viewing a note</li>
 				<li>Theme and color scheme optimization</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.9.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.9.0</h3>
 			<ul>
 				<li>Added support for material you theming</li>
 				<li>Added system theme support</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.8.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.8.0</h3>
 			<ul>
 				<li>View item when clicking checkbox items in todo and goals</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.7.1</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.7.1</h3>
 			<ul>
 				<li>Fixed duplicate checkbox created on initial load.</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.7.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.7.0</h3>
 			<ul>
 				<li>Reworked view page for todos and goals.</li>
 				<li>Added inner checklist for todos and goals.</li>
 				<li>Fixed background service fires upon disabling.</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.6.2</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.6.2</h3>
 			<ul>
 				<li>Optimized accent colors on some buttons.</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.6.1</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.6.1</h3>
 			<ul>
 				<li>Fixed accent color not applied on some inputs.</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.6.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.6.0</h3>
 			<ul>
 				<li>Added accent colors.</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.5.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.5.0</h3>
 			<ul>
 				<li>Add gesture navigation on switching page.</li>
 				<li>Add filter for todos and goals.</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.4.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.4.0</h3>
 			<ul>
 				<li>Moved ads to More page for supporting the dev.</li>
 				<li>Fixed issues in generating repeating notes.</li>
 				<li>Fixed issues in disabling notification.</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.3.3</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.3.3</h3>
 			<ul>
 				<li>Fixed issues for repeating notes not generating properly.</li>
 				<li>Added settings for optional background service</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.3.2</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.3.2</h3>
 			<ul>
 				<li>Fixed issues with alarm notification</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.3.1</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.3.1</h3>
 			<ul>
 				<li>Removed notification on successful generation of repeating notes</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.3.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.3.0</h3>
 			<ul>
 				<li>Fixed auto backup not working properly</li>
 				<li>Fixed auto repeat notes not working properly</li>
 				<li>Fixed scheduled notes with alarm not working properly</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.2.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.2.0</h3>
 			<ul>
 				<li>Added dots and changed color for calendar view</li>
 				<li>Added edit button when previewing notes, todo, and templates</li>
@@ -234,8 +234,8 @@ permalink: /scheduleit/release-logs
 				<li>Various fixes and optimization</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.1.1</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.1.1</h3>
 			<ul>
 				<li>Fixed active bottom navigation not set properly</li>
 				<li>Added active textfield cursor lines</li>
@@ -243,20 +243,20 @@ permalink: /scheduleit/release-logs
 				<li>Better animation for sliding action of todo and goals</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.12</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.12</h3>
 			<ul>
 				<li>Added goals</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.11</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.11</h3>
 			<ul>
 				<li>Improve loader and alert preview</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.10</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.10</h3>
 			<ul>
 				<li>Added custom alert</li>
 				<li>Added custom loader</li>
@@ -268,14 +268,14 @@ permalink: /scheduleit/release-logs
 				<li>Fixed various issues regarding ads</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.9</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.9</h3>
 			<ul>
 				<li>Hotfix for crashing alarm</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.8</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.8</h3>
 			<ul>
 				<li>Added links in more screen</li>
 				<li>Allow creation of alarms</li>
@@ -283,58 +283,58 @@ permalink: /scheduleit/release-logs
 				<li>More optimization</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.7</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.7</h3>
 			<ul>
 				<li>Fixed toggle issue on timer</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.6</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.6</h3>
 			<ul>
 				<li>Fixed issue in creating and updating timer</li>
 				<li>Fixed notification logo issue</li>
 				<li>Updated app icon for cleaner look</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.5</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.5</h3>
 			<ul>
 				<li>Improved notifications for repeating notes</li>
 				<li>Added redirection from notes to timer</li>
 				<li>Create notes from templates</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.4</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.4</h3>
 			<ul>
 				<li>Initial notification for repeating notes</li>
 				<li>Added trigger for repeating notes</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.3</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.3</h3>
 			<ul>
 				<li>Show date for repeating notes</li>
 				<li>Show children off repeating notes</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.2</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.2</h3>
 			<ul>
 				<li>Improved design for storage</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.1</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.1</h3>
 			<ul>
 				<li>Fixed storage initialization issue</li>
 				<li>Added initial future todo</li>
 				<li>Optimized time picker</li>
 			</ul>
 		</div>
-		<div class="col-12">
-			<p>v1.0.0</p>
+		<div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-shadow hover:shadow-md">
+			<h3 class="text-xl font-bold text-blue-600 mt-0 mb-4">v1.0.0</h3>
 			<ul>
 				<li>Initial Release</li>
 			</ul>
