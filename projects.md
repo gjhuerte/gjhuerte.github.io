@@ -35,6 +35,15 @@ permalink: /projects/
                 <p class="text-gray-500 leading-relaxed">An intuitive financial tool designed to track expenses, manage budgets, and provide insightful analytics.</p>
             </a>
 
+            <!-- Nakabudget -->
+            <a href="#" class="group block bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-3xl p-8 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-400/50 transition-all duration-300">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Nakabudget</h3>
+                <p class="text-gray-500 leading-relaxed">An offline personal finance app to manage budgets, transactions, and debts entirely on your device.</p>
+            </a>
+
             <!-- HRMS -->
             <a href="#" class="group block bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-3xl p-8 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300">
                 <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
